@@ -1,0 +1,55 @@
+page-register {
+    .logo-app {
+        height: 250px;
+        background-image: url(../assets/images/logo_app.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .register-social {
+        .button {
+            background: none;
+            width: 60px;
+            height: 60px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px 10px;
+            &.fb {
+                background-image: url(../assets/images/fb.svg);
+            }
+            &.tt {
+                background-image: url(../assets/images/tt.svg);
+            }
+            &.gp {
+                background-image: url(../assets/images/gp.svg);
+            }
+        }
+    }
+    .register-with {
+        padding: 10px;
+    }
+    .register-or {
+        padding: 10px;
+        div {
+            display: inline-block;
+        }
+        .line {
+            width: 120px;
+            margin: 10px;
+            border-top: 2px solid rgba(#FFF, 0.2);
+            position: relative;
+            top: 6px;
+        }
+    }
+    .register-button {
+        margin-top: 10px;
+        .button {
+            padding: 10px 45px;
+            background-color: rgba(#FFF, 0.8);
+        }
+    }
+}

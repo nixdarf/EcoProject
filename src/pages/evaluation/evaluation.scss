@@ -1,0 +1,43 @@
+page-evaluation {
+    .content {
+        background-color: rgba(#EAEAEA, 1);
+        color: #000;
+    }
+    .slick-slide {
+        opacity: 0.2;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .slick-current {
+        opacity: 1 !important;
+    }
+    .slick-dots li button:before {
+        font-size: 30px !important;
+    }
+    .carousel {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .option-wrapper {
+        & .slick-dots {
+            position: initial;
+        }
+        & .option-test {
+            margin-top: 40px;
+            padding: 0;
+            .grid {
+                padding: 0;
+                .row {
+                    padding: 0;
+                    .col {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

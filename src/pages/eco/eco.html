@@ -1,0 +1,102 @@
+<!--<ion-header>
+    <ion-navbar hideBackButton>
+        <ion-buttons start>
+            <button ion-button class="user"><ion-icon name="contact"></ion-icon></button>
+        </ion-buttons>
+        <ion-title></ion-title>
+        <ion-buttons end>
+            <button ion-button class="rewards"><ion-icon name="contact"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>-->
+
+
+<ion-content>
+    <div class="eco-header">
+        <ion-grid class="eco-header-buttons">
+            <ion-row>
+                <ion-col>
+                    <ion-buttons>
+                        <button ion-button clear class="user"><h1><ion-icon color="light" name="ios-person"></ion-icon></h1></button>
+                    </ion-buttons>
+                </ion-col>
+                <ion-col>
+                    <ion-buttons end>
+                        <button ion-button clear class="rewards"><h1><ion-icon color="light" name="ios-trophy"></ion-icon></h1></button>
+                    </ion-buttons>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <div class="eco-points" text-center>
+        <div class="number">
+            <div class="text1">{{points}}</div>
+            <div class="text2">puntos</div>
+        </div>
+    </div>
+    <div>
+        <div class="eco-text-title">Canjea tus puntos por:</div>
+        <ion-scroll scrollX class="rewards-options">
+            <ul>
+                <li text-center (click)="onClaimReward()">
+                    <div class="wrapper">
+                        <div class="title">
+                            Entradas al cine
+                        </div>
+                        <div class="icon cine"></div>
+                        <div class="number">200</div>
+                        <div class="text">puntos</div>
+                        <div class="percent"></div>
+                    </div>
+                </li>
+                <li text-center (click)="onClaimReward()">
+                    <div class="wrapper">
+                        <div class="title">
+                            Recorrido en taxi
+                        </div>
+                        <div class="icon taxi"></div>
+                        <div class="number">200</div>
+                        <div class="text">puntos</div>
+                        <div class="percent"></div>
+                    </div>
+                </li>
+                <li text-center (click)="onClaimReward()">
+                    <div class="wrapper">
+                        <div class="title">
+                            Cashback
+                        </div>
+                        <div class="icon cashback"></div>
+                        <div class="number">200</div>
+                        <div class="text">puntos</div>
+                        <div class="percent"></div>
+                    </div>
+                </li>
+            </ul>
+        </ion-scroll>
+    </div>
+</ion-content>
+
+<ion-footer class="evaluation-footer">
+    <div class="evaluation-items-wrapper">
+        <div class="eco-text-title text">Encuestas cerca de ti</div>
+        <div>
+            <div class="items">
+                <div (click)="onEvaluate()" class="item-wrapper">
+                    <button ion-button class="logo-01"></button>
+                </div>
+                <div (click)="onEvaluate()" class="item-wrapper">
+                    <button ion-button class="logo-02"></button>
+                </div>
+                <div (click)="onEvaluate()" class="item-wrapper">
+                    <button ion-button class="logo-05"></button>
+                </div>
+                <div (click)="onEvaluate()" class="item-wrapper">
+                    <button ion-button class="logo-04"></button>
+                </div>
+                <div (click)="onEvaluate()" class="item-wrapper">
+                    <button ion-button>+53</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-footer>

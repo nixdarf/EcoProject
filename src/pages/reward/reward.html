@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Escoge tu recompenza
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button [disabled]="!isReward" (click)="onOk()">
+                <ion-icon name="contact"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list radio-group [(ngModel)]="rewardOption" (ionChange)="onReward($event)" no-lines>
+        <ion-item>
+            <ion-label>Cinemark</ion-label>
+            <ion-radio checked="false" value="reward-0"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Cabify</ion-label>
+            <ion-radio checked="false" value="reward-1"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Cashback</ion-label>
+            <ion-radio checked="false" value="reward-2"></ion-radio>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Evaluación
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="onSave()">
+                <ion-icon name="md-checkbox-outline"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding clas>
+    <div class="option-wrapper">
+        <div class="option-test">
+            <h5>Infraestructura</h5>
+            <div class="carousel">
+                <div>
+                    Local esta sucio y/o tiene mal olor
+                </div>
+                <div>
+                    Local no se ve sucio pero se ve desorden o descuido
+                </div>
+                <div>
+                    Local esta ordenado, limpio pero no es impecable
+                </div>
+                <div>
+                    Local es Impecablemente limpio
+                </div>
+            </div>
+        </div>
+        <div class="option-test">
+            <h5>Atención</h5>
+            <div class="carousel">
+                <div>
+                    Personal no esta atento, no saluda, no establece contacto visual
+                </div>
+                <div>
+                    Personal esta atento, saluda pero sin calidez , sin contacto visual
+                </div>
+                <div>
+                    Personal establece contacto visual, saluda pero sin calidez
+                </div>
+                <div>
+                    Personal establece contacto visual, saluda con mucha calidez y cordialidad
+                </div>
+            </div>
+        </div>
+        <div class="option-test">
+            <h5>Producto</h5>
+            <div class="carousel">
+                <div>
+                    Producto es de mala calidad
+                </div>
+                <div>
+                    Producto esta bien pero no lo que esperaba
+                </div>
+                <div>
+                    Producto es lo que espero pero no me sorprende
+                </div>
+                <div>
+                    Estoy completamente satisech0 con el producto , experctacular
+                </div>
+            </div>
+        </div>
+        <div class="option-test">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-9>
+                        <h5>Satisfacción General</h5>
+                    </ion-col>
+                    <ion-col col-3 text-right>
+                        <h6>{{satisfaction}}</h6>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-range min="0" max="10" step="1" snaps="true" color="secondary" [(ngModel)]="satisfaction"></ion-range>
+            <div>
+                <ion-input type="text" placeholder="Observación:"></ion-input>
+            </div>
+        </div>
+    </div>
+</ion-content>
